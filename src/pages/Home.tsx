@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Hero2 from "../components/Hero2";
 import Hero3 from "../components/Hero3";
 import HomePageFooter from "../components/HomePageFooter";
+import HomePageFooterDynamic from "../components/HomePageFooterDynamic";
 
 const Home = () => {
     const { themeMode } = useSelector((state: RootState) => state.theme);
@@ -22,7 +23,8 @@ const Home = () => {
             </section>
             <Hero2 />
             <Hero3 />
-            <HomePageFooter />
+            {/* <HomePageFooter /> */}
+            <HomePageFooterDynamic />
         </div>
     );
 };
