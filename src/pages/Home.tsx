@@ -22,7 +22,7 @@ const Home = () => {
                 </div>
             </section>
             <Hero2 />
-            <Hero3 />
+            {/* <Hero3 /> */}
             {/* <HomePageFooter /> */}
             <HomePageFooterDynamic />
         </div>
