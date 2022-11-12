@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../app/store";
 import qandeel from "../images/qandeel.jpeg";
+import fs from "../images/fs.png";
+// import pdf from '../images/resume.pdf'
 
 const Hero2 = () => {
     const { themeMode } = useSelector((state: RootState) => state.theme);
@@ -17,7 +19,7 @@ const Hero2 = () => {
                         </p>
 
                         <p>
-                            While I keep busy teaching courses, I still take
+                            While I keep busy in development, I still take
                             interviews in search of a great team &amp; projects
                             that interest me.
                         </p>
@@ -29,7 +31,10 @@ const Hero2 = () => {
                         <p>
                             Fullstack developer with primary focus on Django +
                             React:{" "}
-                            <a target="_blank" href="resume.pdf">
+                            <a
+                                target="_blank"
+                                href={require("../images/resume.pdf")}
+                            >
                                 Download Resume
                             </a>
                         </p>
@@ -43,30 +48,33 @@ const Hero2 = () => {
                                 <li>Typescript</li>
                                 <li>ReactJS</li>
                                 <li>React Native</li>
-                                <li>Kubernetes</li>
+                                <li>Mobile Development</li>
                             </ul>
 
                             <ul>
+                                <li>Web Design</li>
+                                <li>UI/UX</li>
+                                <li>Figa</li>
                                 <li>Docker</li>
                                 <li>Kubernetes</li>
                                 <li>orchestration</li>
                                 <li>Kubernetes</li>
-                                <li>Web Design</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="social-links">
-                        <img id="social_img" src={qandeel} alt="qandeel" />
-                        <h3>Find me on Twitter &amp; Youtube</h3>
+                        <img id="social_img" src={fs} alt="qandeel" />
+                        {/* <h3>Find me on Twitter &amp; Youtube</h3> */}
+                        <h3>Find me on Twitter</h3>
 
-                        <a
+                        {/* <a
                             target="_blank"
                             href="https://twitter.com/CQandeelhaider?t=7N5zmsfiGutO8r0H5Y5xfA&s=09"
                             rel="noreferrer"
                         >
                             YouTube: @Qandeel-Khan
-                        </a>
+                        </a> */}
                         <br />
                         <a
                             target="_blank"
